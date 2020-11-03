@@ -20,7 +20,7 @@ export async function createGraphics(config: Config, data: FigmaData): Promise<v
 
     await refresh(config.outputFolderGraphics);
 
-    const graphicsPage = createPage(data.document.children, 'Graphics');
+    const graphicsPage = createPage(data.document.children, 'Vectors');
     const fileList = await processGraphics(graphicsPage, config);
 
     await writeGraphics(fileList, config);

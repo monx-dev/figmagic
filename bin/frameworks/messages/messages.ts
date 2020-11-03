@@ -50,6 +50,7 @@ export const MsgSetDataFromLocal = Message(
   true
 );
 export const MsgSyncElements = Message(`\nAttempting to parse elements...\n`, true);
-export const MsgSyncGraphics = Message(`\nGetting images from Figma API...`, true);
+export const MsgSyncGraphics = Message(`\nGetting vectors from Figma API...`, true);
+export const MsgSyncImages = Message(`\nGetting images from Figma API...`, true);
 export const MsgWriteBaseFile = Message(`\nWriting Figma base file...`, true);
 export const MsgWriteTokens = Message(`\nWriting design tokens...`, true);

@@ -26,6 +26,8 @@ export function parseCliArgs(argsArray: string[]): Config {
     '-elements': (val: string) => (config.outputFolderElements = val),
     '--outputFolderGraphics': (val: string) => (config.outputFolderGraphics = val),
     '-graphics': (val: string) => (config.outputFolderGraphics = val),
+    '--outputFolderImages': (val: string) => (config.outputFolderImages = val),
+    '-images': (val: string) => (config.outputFolderImages = val),
     '--outputFolderTokens': (val: string) => (config.outputFolderTokens = val),
     '-tokens': (val: string) => (config.outputFolderTokens = val),
     '--outputFormatCss': (val: string) => (config.outputFormatCss = val.toLowerCase()),

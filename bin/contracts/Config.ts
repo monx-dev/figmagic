@@ -7,6 +7,7 @@ export type Config = {
   figmagicFolder: string;
   outputFolderElements: string;
   outputFolderGraphics: string;
+  outputFolderImages: string;
   outputFolderTokens: string;
   outputFormatCss: 'ts' | 'mjs' | 'js';
   outputFormatDescription: 'md' | 'txt';

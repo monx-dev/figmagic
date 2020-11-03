@@ -9,6 +9,7 @@ export const baseConfig: Config = {
   figmagicFolder: '.figmagic',
   outputFolderElements: 'elements',
   outputFolderGraphics: 'graphics',
+  outputFolderImages: 'images',
   outputFolderTokens: 'tokens',
   outputFormatCss: 'ts',
   outputFormatDescription: 'md',
