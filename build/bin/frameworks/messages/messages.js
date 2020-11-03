@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MsgWriteTokens = exports.MsgWriteBaseFile = exports.MsgSyncGraphics = exports.MsgSyncElements = exports.MsgSetDataFromLocal = exports.MsgSetDataFromApi = exports.MsgProcessElementsCreatingElement = exports.MsgJobCompleteInitStopped = exports.MsgJobCompleteInit = exports.MsgJobComplete = exports.MsgGetTokenMatchNoMatch = exports.MsgGeneratedFileWarning = exports.MsgDownloadFileWritingFile = exports.MsgConfigDebugRc = exports.MsgConfigDebugFinal = exports.MsgConfigDebugEnv = exports.MsgConfigDebugCli = void 0;
+exports.MsgWriteTokens = exports.MsgWriteBaseFile = exports.MsgSyncImages = exports.MsgSyncGraphics = exports.MsgSyncElements = exports.MsgSetDataFromLocal = exports.MsgSetDataFromApi = exports.MsgProcessElementsCreatingElement = exports.MsgJobCompleteInitStopped = exports.MsgJobCompleteInit = exports.MsgJobComplete = exports.MsgGetTokenMatchNoMatch = exports.MsgGeneratedFileWarning = exports.MsgDownloadFileWritingFile = exports.MsgConfigDebugRc = exports.MsgConfigDebugFinal = exports.MsgConfigDebugEnv = exports.MsgConfigDebugCli = void 0;
 const colors_1 = require("../system/colors");
 function Message(str, warn) {
     if (warn)
@@ -25,7 +25,8 @@ exports.MsgProcessElementsCreatingElement = (elementName, fixedName) => `Process
 exports.MsgSetDataFromApi = Message(`\nAttempting to fetch data from Figma API...`, true);
 exports.MsgSetDataFromLocal = Message(`\nAttempting to recompile data from local Figma JSON file...`, true);
 exports.MsgSyncElements = Message(`\nAttempting to parse elements...\n`, true);
-exports.MsgSyncGraphics = Message(`\nGetting images from Figma API...`, true);
+exports.MsgSyncGraphics = Message(`\nGetting vectors from Figma API...`, true);
+exports.MsgSyncImages = Message(`\nGetting images from Figma API...`, true);
 exports.MsgWriteBaseFile = Message(`\nWriting Figma base file...`, true);
 exports.MsgWriteTokens = Message(`\nWriting design tokens...`, true);
 //# sourceMappingURL=messages.js.map

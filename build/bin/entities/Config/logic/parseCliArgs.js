@@ -24,6 +24,8 @@ function parseCliArgs(argsArray) {
         '-elements': (val) => (config.outputFolderElements = val),
         '--outputFolderGraphics': (val) => (config.outputFolderGraphics = val),
         '-graphics': (val) => (config.outputFolderGraphics = val),
+        '--outputFolderImages': (val) => (config.outputFolderImages = val),
+        '-images': (val) => (config.outputFolderImages = val),
         '--outputFolderTokens': (val) => (config.outputFolderTokens = val),
         '-tokens': (val) => (config.outputFolderTokens = val),
         '--outputFormatCss': (val) => (config.outputFormatCss = val.toLowerCase()),

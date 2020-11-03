@@ -15,7 +15,7 @@ function createGraphics(config, data) {
                 throw new Error(errors_1.ErrorCreateGraphics);
             console.log(messages_1.MsgSyncGraphics);
             yield refresh_1.refresh(config.outputFolderGraphics);
-            const graphicsPage = createPage_1.createPage(data.document.children, 'Graphics');
+            const graphicsPage = createPage_1.createPage(data.document.children, 'Vectors');
             const fileList = yield processGraphics_1.processGraphics(graphicsPage, config);
             yield writeGraphics_1.writeGraphics(fileList, config);
         }

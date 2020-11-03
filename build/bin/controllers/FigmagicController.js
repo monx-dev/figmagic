@@ -7,6 +7,7 @@ const createElements_1 = require("../usecases/createElements");
 const createGraphics_1 = require("../usecases/createGraphics");
 const messages_1 = require("../frameworks/messages/messages");
 const errors_1 = require("../frameworks/errors/errors");
+const createImages_1 = require("../usecases/createImages");
 function FigmagicController(config, data) {
     return tslib_1.__awaiter(this, void 0, void 0, function* () {
         try {
@@ -14,6 +15,8 @@ function FigmagicController(config, data) {
                 throw new Error(errors_1.ErrorFigmagicController);
             if (config.syncGraphics)
                 yield createGraphics_1.createGraphics(config, data);
+            if (config.syncGraphics)
+                yield createImages_1.createImages(config, data);
             if (config.syncTokens)
                 yield createTokens_1.createTokens(config, data);
             if (config.syncElements)
